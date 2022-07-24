@@ -1,0 +1,97 @@
+:root {
+    box-sizing: border-box;
+  }
+  /* Components in cronological order */
+  .App {
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #title {
+    color: white;
+    padding-bottom: 15px;
+  }
+  #quote-Box{ 
+    background-color: rgba(255,255,255, 95%);
+    height: 300px;
+    width: 500px;
+    border-radius: 2.5%;
+    box-shadow: 5px 5px 15px black, -5px -5px 50px gray;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  #text {
+    padding: 20px;
+    font-size: 1.5rem;
+    text-align: left;
+  }
+  #author {
+    margin-top: -25px;
+    margin-right: 75px;
+    font-size: 1.125rem;
+    float: right;
+
+  }
+  a {
+    position: absolute;
+    left: 15px;
+    top: 55px;
+  }
+  button {
+    height: 40px;
+    width: 120px;
+    border: 1.5px solid black;
+    border-radius: 20%;
+    top: 40px;
+  }
+   
+
+  /* Icons specs */
+  .fa-quote-left {
+    float: left;
+    padding: 0.5rem 1rem 15rem 0;
+    font-size: 2.5rem;
+  }
+  .fa-twitter {
+    color: white !important;
+    padding: 7px;
+    border-radius: 7px;
+  }
+  
+  /* Animations */
+  .fading {
+    animation: fading infinite 15s linear;
+  }
+  .themeColor{
+    animation: themeColor infinite 15s linear;
+  }
+  @keyframes themeColor {
+    0% {
+      background-color: rgb(73, 67, 49);
+      color: rgb(73, 67, 49);
+    }
+    40% {
+      background-color:rgb(84, 56, 220);
+      color: rgb(84, 56, 220);
+    }
+    80% {
+      background-color:rgb(15, 3, 38);
+      color: rgb(15, 3, 38);
+    }
+    100% {
+      background-color: rgb(73, 67, 49);
+      color: rgb(73, 67, 49);
+    }
+  };
+  @keyframes fading {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  };
